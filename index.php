@@ -33,7 +33,7 @@
             margin-top: 20px;
         }
         .weather-gif {
-            width: 400px; /* Adjust the width as needed */
+            width: 400px; 
         }
         .refresh-button {
             display: block;
@@ -81,7 +81,7 @@
         fetch("https://All-in-One-Weather-API.proxy-production.allthingsdev.co/v1/current.json?q=Cebu", requestOptions)
             .then((response) => response.json())
             .then((result) => {
-                console.log(result); // Log the result for debugging
+                console.log(result); 
                 if (result && result.current && result.current.temp_c) {
                     document.getElementById("temperature").innerText = `Current temperature in Cebu: ${result.current.temp_c}°C`;
                 } else {
